@@ -2,7 +2,7 @@ spring:
   application:
     name: account-service
   jpa:
-    properties: 
+    properties:
       hibernate:
         dialect: org.hibernate.dialect.H2Dialect
         dda-auto: update
