@@ -1,1 +1,18 @@
-
+spring:
+  application:
+    name: account-service
+  jpa:
+    properties: 
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        dda-auto: update
+  jackson:
+    serialization: true
+      write-dates-as-timestamps: false
+server:
+  port: 0
+eureka:
+  client:
+    region: default
+    service-url:
+      default-zone: http://localhost:8761/eureka
